@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,9 +28,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 /**Socket Connect to Server**/
-                Intent intent = new Intent(MainActivity.this, ControlActivity.class);
-                startActivity(intent);
-                MainActivity.this.finish();
+                if(ed_username.getText().toString().trim().equals("") || ed_password.getText().toString().trim().equals("")){
+                    Toast.makeText(MainActivity.this, "用户名或密码不能为空！", Toast.LENGTH_LONG).show();
+                }
+                else {
+                    Intent intent = new Intent(MainActivity.this, ControlActivity.class);
+                    startActivity(intent);
+                    MainActivity.this.finish();
+                }
             }
         });
     }

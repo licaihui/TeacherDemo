@@ -13,10 +13,49 @@ import android.widget.EditText;
 
 public class ControlActivity extends AppCompatActivity{
 
+    private Button bt_sign, bt_stuInfo, bt_vacate, bt_pushClass;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_control);
 
+        bt_sign = (Button)findViewById(R.id.bt_sign);
+        bt_stuInfo = (Button)findViewById(R.id.bt_stuInfo);
+        bt_vacate = (Button)findViewById(R.id.bt_vacate);
+        bt_pushClass = (Button)findViewById(R.id.bt_pushClass);
+
+        //学生签到登记
+        bt_sign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ControlActivity.this, SignActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //学生信息获取
+        bt_stuInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        //学生请假管理
+        bt_vacate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        //发布课程安排
+        bt_pushClass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
     }
 }
