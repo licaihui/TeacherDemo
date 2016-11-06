@@ -22,6 +22,10 @@
         <activity android:name=".ManageStuInfoActivity"></activity>
 
         <activity android:name=".ManageStuInfoDetail"></activity>
+
+        <activity android:name=".VacateActivity"></activity>
+
+        <activity android:name=".VacateDetail"></activity>
     </application>
 
 </manifest>
