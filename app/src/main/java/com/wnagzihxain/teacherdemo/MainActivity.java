@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 /**Socket Connect to Server**/
                 if(ed_username.getText().toString().trim().equals("") || ed_password.getText().toString().trim().equals("")){
-                    Toast.makeText(MainActivity.this, "用户名或密码不能为空！", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "用户名或密码不能为空！", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Intent intent = new Intent(MainActivity.this, ControlActivity.class);

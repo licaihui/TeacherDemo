@@ -37,7 +37,8 @@ public class ControlActivity extends AppCompatActivity{
         bt_stuInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(ControlActivity.this, ManageStuInfoActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -45,7 +46,8 @@ public class ControlActivity extends AppCompatActivity{
         bt_vacate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //Intent intent = new Intent(ControlActivity.this, );
+                //startActivity(intent);
             }
         });
 
@@ -53,7 +55,8 @@ public class ControlActivity extends AppCompatActivity{
         bt_pushClass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //Intent intent = new Intent(ControlActivity.this, );
+                //startActivity(intent);
             }
         });
 

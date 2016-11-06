@@ -18,6 +18,10 @@
         <activity android:name=".ControlActivity"></activity>
 
         <activity android:name=".SignActivity"></activity>
+
+        <activity android:name=".ManageStuInfoActivity"></activity>
+
+        <activity android:name=".ManageStuInfoDetail"></activity>
     </application>
 
 </manifest>

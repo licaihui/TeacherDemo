@@ -15,10 +15,10 @@ public class ClasssignstuInfo {
     }
 
     public String getStuID(){
-        return StuID;
+        return this.StuID;
     }
 
     public String getStuName(){
-        return StuName;
+        return this.StuName;
     }
 }
