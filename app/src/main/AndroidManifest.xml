@@ -26,6 +26,9 @@
         <activity android:name=".VacateActivity"></activity>
 
         <activity android:name=".VacateDetail"></activity>
+
+        <activity android:name=".PushClassActivity"></activity>
+
     </application>
 
 </manifest>

@@ -56,8 +56,8 @@ public class ControlActivity extends AppCompatActivity{
         bt_pushClass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(ControlActivity.this, );
-                //startActivity(intent);
+                Intent intent = new Intent(ControlActivity.this, PushClassActivity.class);
+                startActivity(intent);
             }
         });
 
