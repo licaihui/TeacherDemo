@@ -45,6 +45,7 @@ public class ManageStuInfoActivity extends AppCompatActivity {
         });
     }
 
+    //生成测试数据
     private void initStuInfo(){
         ClassmanageStuInfo manageStuInfo;
         for (int i = 1; i <= 30; i++){

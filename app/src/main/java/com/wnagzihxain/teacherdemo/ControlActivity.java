@@ -15,6 +15,7 @@ public class ControlActivity extends AppCompatActivity{
 
     private Button bt_sign, bt_stuInfo, bt_vacate, bt_pushClass;
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_control);
@@ -46,8 +47,8 @@ public class ControlActivity extends AppCompatActivity{
         bt_vacate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(ControlActivity.this, );
-                //startActivity(intent);
+                Intent intent = new Intent(ControlActivity.this, VacateActivity.class);
+                startActivity(intent);
             }
         });
 
